@@ -6,7 +6,8 @@ print("1. Addition")
 print("2. Subtraction")
 print("3. Multiplication")
 print("4. Division")
-print("5. Exit")
+print("5. Modulus")
+print("6. Exit")
 
 choice = int(input("Enter your choice: "))
 
@@ -35,8 +36,13 @@ elif choice == 4:
         print("Cannot divide by zero.")
 
 elif choice == 5:
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    print("Result =", a % b)
+
+elif choice == 6:
     print("Thank you for using Student Calculator.")
 
 else:
     print("Invalid choice.")
-    
+
